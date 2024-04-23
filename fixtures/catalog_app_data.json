@@ -1,0 +1,245 @@
+[
+{
+  "model": "catalog_app.category",
+  "pk": 1,
+  "fields": {
+    "name": "Овощи",
+    "description": ""
+  }
+},
+{
+  "model": "catalog_app.category",
+  "pk": 2,
+  "fields": {
+    "name": "Фрукты",
+    "description": ""
+  }
+},
+{
+  "model": "catalog_app.category",
+  "pk": 3,
+  "fields": {
+    "name": "Ягоды",
+    "description": ""
+  }
+},
+{
+  "model": "catalog_app.category",
+  "pk": 4,
+  "fields": {
+    "name": "Мясо",
+    "description": ""
+  }
+},
+{
+  "model": "catalog_app.category",
+  "pk": 5,
+  "fields": {
+    "name": "Молочка",
+    "description": ""
+  }
+},
+{
+  "model": "catalog_app.category",
+  "pk": 6,
+  "fields": {
+    "name": "Кондитерские изделия",
+    "description": null
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 1,
+  "fields": {
+    "name": "Свинина",
+    "description": "",
+    "picture": "",
+    "category": 4,
+    "price": 400,
+    "created_at": "2024-04-23T12:56:35.917Z",
+    "updated_at": "2024-04-23T12:56:35.917Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 2,
+  "fields": {
+    "name": "Собака",
+    "description": "",
+    "picture": "",
+    "category": 4,
+    "price": 300,
+    "created_at": "2024-04-23T12:57:20.801Z",
+    "updated_at": "2024-04-23T12:57:20.801Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 3,
+  "fields": {
+    "name": "Говядина",
+    "description": "",
+    "picture": "",
+    "category": 4,
+    "price": 700,
+    "created_at": "2024-04-23T12:58:56.246Z",
+    "updated_at": "2024-04-23T12:58:56.246Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 4,
+  "fields": {
+    "name": "Яблоки",
+    "description": "",
+    "picture": "",
+    "category": 2,
+    "price": 100,
+    "created_at": "2024-04-23T12:59:32.680Z",
+    "updated_at": "2024-04-23T12:59:32.680Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 5,
+  "fields": {
+    "name": "Сметана",
+    "description": "",
+    "picture": "",
+    "category": 5,
+    "price": 120,
+    "created_at": "2024-04-23T13:00:01.090Z",
+    "updated_at": "2024-04-23T13:00:01.090Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 6,
+  "fields": {
+    "name": "Картофель",
+    "description": "",
+    "picture": "",
+    "category": 1,
+    "price": 50,
+    "created_at": "2024-04-23T13:00:33.982Z",
+    "updated_at": "2024-04-23T13:00:33.982Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 7,
+  "fields": {
+    "name": "Молоко",
+    "description": "",
+    "picture": "",
+    "category": 5,
+    "price": 130,
+    "created_at": "2024-04-23T13:01:05.961Z",
+    "updated_at": "2024-04-23T13:01:05.961Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 8,
+  "fields": {
+    "name": "Помидоры",
+    "description": "",
+    "picture": "",
+    "category": 1,
+    "price": 200,
+    "created_at": "2024-04-23T13:01:44.402Z",
+    "updated_at": "2024-04-23T13:01:44.402Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 9,
+  "fields": {
+    "name": "Груши",
+    "description": "",
+    "picture": "",
+    "category": 2,
+    "price": 200,
+    "created_at": "2024-04-23T13:03:15.035Z",
+    "updated_at": "2024-04-23T13:03:15.035Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 10,
+  "fields": {
+    "name": "Кефир",
+    "description": "",
+    "picture": "",
+    "category": 5,
+    "price": 130,
+    "created_at": "2024-04-23T13:04:04.980Z",
+    "updated_at": "2024-04-23T13:04:04.980Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 11,
+  "fields": {
+    "name": "Морковь",
+    "description": "",
+    "picture": "",
+    "category": 1,
+    "price": 70,
+    "created_at": "2024-04-23T13:05:07.064Z",
+    "updated_at": "2024-04-23T13:05:07.064Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 13,
+  "fields": {
+    "name": "Капуста",
+    "description": "",
+    "picture": "",
+    "category": 1,
+    "price": 50,
+    "created_at": "2024-04-23T13:09:07.422Z",
+    "updated_at": "2024-04-23T13:09:07.422Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 14,
+  "fields": {
+    "name": "Хурма",
+    "description": "",
+    "picture": "",
+    "category": 2,
+    "price": 250,
+    "created_at": "2024-04-23T13:10:35.669Z",
+    "updated_at": "2024-04-23T13:10:35.669Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 15,
+  "fields": {
+    "name": "Клюква",
+    "description": "",
+    "picture": "",
+    "category": 3,
+    "price": 200,
+    "created_at": "2024-04-23T13:12:52.556Z",
+    "updated_at": "2024-04-23T13:12:52.556Z"
+  }
+},
+{
+  "model": "catalog_app.product",
+  "pk": 12,
+  "fields": {
+    "name": "Малина",
+    "description": "",
+    "picture": "",
+    "category": 3,
+    "price": 300,
+    "created_at": "2024-04-23T13:13:19.018Z",
+    "updated_at": "2024-04-23T13:13:19.018Z"
+  }
+}
+]
