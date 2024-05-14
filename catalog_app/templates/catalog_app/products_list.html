@@ -1,0 +1,22 @@
+{% extends 'catalog_app/home.html' %}
+{% load media_tags %}
+{% block content %}
+<div class="container"><div class="row text-center">
+        {% for product in products %}
+        <div class="col-3">
+            <div class="card mb-4 box-shadow">
+                <img src="{{ product.picture|my_media }}">
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">{{ product.name }}</h1>
+                    <h3 class="card-title pricing-card-title">{{ product.price }} рублей</h3>
+                    <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                        <li>{{ product.description|slice:":100" }}...</li>
+                    </ul>
+                    <a class="btn btn-primary" href="{% url 'catalog_app:product_detail' product.pk %}" role="button">Описание</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

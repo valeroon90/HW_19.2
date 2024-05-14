@@ -1,14 +1,41 @@
+from django.http import HttpResponse
+from django.template.loader import render_to_string
 from django.shortcuts import render
+from catalog_app.models import Product
+
 
 def home(request):
-    print("Главная страница")
-    return render(request, template_name='catalog_app/home.html')
+   #t = render_to_string('catalog_app/home.html')
+   #return HttpResponse(t)
+    return render(request, 'catalog_app/home.html')
 
 
 def contact(request):
     if request.method == 'POST':
-        name = request.POST.get('name')
-        phone = request.POST.get('phone')
-        message = request.POST.get('message')
-        print(f'You have new message from {name}({phone}): {message}')
-    return render(request, 'catalog_app/contacts.html')
+      name = request.POST.get('name')
+      phone = request.POST.get('phone')
+      message = request.POST.get('message')
+      print(f'You have new message from {name}({phone}): {message}')
+    return render(request, 'catalog_app/contact.html')
+
+
+
+
+def products_list(request):
+    products = Product.objects.all()
+    context = {
+        'products': products
+    }
+    return render(request, 'catalog_app/products_list.html', context)
+
+
+def product_detail(request, pk):
+    product_ = Product.objects.get(pk=pk)
+    context = {'product': product_}
+    return render(request, "catalog_app/product_detail.html", context)
+
+
+
+
+
+
