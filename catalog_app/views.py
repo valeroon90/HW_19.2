@@ -7,7 +7,10 @@ from catalog_app.models import Product
 def home(request):
    #t = render_to_string('catalog_app/home.html')
    #return HttpResponse(t)
-    return render(request, 'catalog_app/home.html')
+   context = {
+       'title': 'Онлайн магазин "Натур-продукт"'
+   }
+   return render(request, 'catalog_app/home.html', context)
 
 
 def contact(request):
@@ -16,7 +19,10 @@ def contact(request):
       phone = request.POST.get('phone')
       message = request.POST.get('message')
       print(f'You have new message from {name}({phone}): {message}')
-    return render(request, 'catalog_app/contact.html')
+    context = {
+        'title': 'Контакты'
+    }
+    return render(request, 'catalog_app/contact.html', context)
 
 
 
@@ -24,7 +30,8 @@ def contact(request):
 def products_list(request):
     products = Product.objects.all()
     context = {
-        'products': products
+        'products': products,
+        'title': 'Список продуктов'
     }
     return render(request, 'catalog_app/products_list.html', context)
 
